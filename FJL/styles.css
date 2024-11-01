@@ -5,13 +5,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     margin: 0;
     padding: 0px;
 }
 
 .pass-container {
-    width: 380px;
+    width: 360px;
     height: 700px;
     background-color: #ffffff;
     border: 2px solid #0000ff;
