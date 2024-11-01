@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f0f0f0; */
+    background-color: #013892;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0px;
+}
+
+.pass-container {
+    width: 350px;
+    height: 700px;
+    background-color: #ffffff;
+    border: 2px solid #0000ff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height: 140px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.user-info {
+    text-align: left;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 2px 0;
+}
+
+.student-id {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "黑体";
+    margin: 20px 0;
+    border-bottom: 1px dashed #000;
+    width: 130%;
+    padding-bottom: 5px;
+}
+
+.department {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "黑体";
+    margin: 0px 0;
+}
+
+.time-container {
+    background-color: #e0e0e0;
+    padding: 5px;
+}
+
+.date {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "黑体";
+    color: #00309C;
+    margin: 0px 0;
+}
+
+.flowing-time {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+    background: linear-gradient(90deg, #ff4500, #ff8500, #ff4500, #9b00ff, #6a00ff, #ff4500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flowing 2s linear infinite;
+    background-size: 200% 100%;
+}
+
+@keyframes flowing {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.qr-container {
+    padding: 10px;
+}
+
+.qr-code {
+    margin: 0px 0;
+    border-top: 1px dashed #000;
+}
+
+.qrcode {
+    width: 180px;
+    height: 180px;
+}
+
+.instructionsInfo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "黑体";
+    color: #C51110;
+    margin-top: 0px;
+}
+
+.instructionsDTL {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "黑体";
+    color: #000000;
+    margin-top: 0px;
+    margin: 0px;
+}
+
+.footer {
+    background-color: #e0e0e0;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.validity {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "黑体";
+    color: #333333;
+    margin-left: 20px;
+}
+
+.verify-button {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "黑体";
+    background-color: #ffffff;
+    color: #C51110;
+    border: 2px solid transparent;
+    padding: 5px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.verify-button:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+#message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 其他样式 */
+}
+
