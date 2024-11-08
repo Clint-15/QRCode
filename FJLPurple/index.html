@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南工学生电子通行证</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="pass-container">
+            <div class="header">
+                <img src="avatar.jpg" alt="头像" class="avatar">
+                <div class="user-info">
+                    <p class="name">万 思</p>
+                    <p class="student-id">2115105096</p>
+                    <p class="department">计算机与软件学院</p>
+                </div>
+            </div>
+            <div class="time-container">
+                <p id="current-date" class="date"></p>
+                <p id="current-time" class="flowing-time"></p>
+            </div>
+            <div class="qr-container">
+                <p class="qr-code"></p>
+                <img src="qrcode.png" alt="二维码" class="qrcode">
+                <p class="instructionsInfo">请在十分钟内完成跨校区通行</p>
+                <p class="instructionsDTL">当前二维码仅用于校本部东门的单次通行使用，过期后需重新扫码</p>
+            </div>
+            <div class="footer">
+                <p id="validity" class="validity">二维码有效期：<span id="countdown">100</span>秒</p>
+                <button class="verify-button" onclick="showMessage()">核验</button>
+                <div id="message" style="display: none;">正常</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>
